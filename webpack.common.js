@@ -1,7 +1,11 @@
 const path = require("path")
+const CopyWebpackPlugin = require("copy-webpack-plugin")
 
 module.exports = {
   context: __dirname,
+  plugins: [
+    new CopyWebpackPlugin([{ from: "./index.html", to: "./dist/index.html" }])
+  ],
   module: {
     rules: [
       {
