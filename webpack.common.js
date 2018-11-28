@@ -4,7 +4,7 @@ const CopyWebpackPlugin = require("copy-webpack-plugin")
 module.exports = {
   context: __dirname,
   plugins: [
-    new CopyWebpackPlugin([{ from: "./index.html", to: "./dist/index.html" }])
+    new CopyWebpackPlugin([{ from: "./index.html", to: "./index.html" }])
   ],
   module: {
     rules: [
