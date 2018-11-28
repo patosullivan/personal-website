@@ -1,3 +1,4 @@
+import Banner from "./Banner"
 import Footer from "./Footer"
 import Main from "./Main"
 import Nav from "./Nav"
@@ -9,7 +10,7 @@ const App = () => {
   const pages = ["Home", "Contact"]
 
   return (
-    <React.Fragment>
+      <Banner />
       <Nav setPage={setPage} pages={pages} />
       <Main page={page} />
       <Footer />
