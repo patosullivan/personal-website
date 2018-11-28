@@ -3,6 +3,7 @@ import Footer from "./Footer"
 import Main from "./Main"
 import Nav from "./Nav"
 import React, { useState } from "react"
+import { Col, Container, Row } from "reactstrap"
 
 const App = () => {
   let [page, setPage] = useState("Home")
@@ -10,12 +11,28 @@ const App = () => {
   const pages = ["Home", "Contact"]
 
   return (
-    <React.Fragment>
-      <Banner />
-      <Nav setPage={setPage} pages={pages} />
-      <Main page={page} />
-      <Footer />
-    </React.Fragment>
+    <Container>
+      <Row>
+        <Col>
+          <Banner />
+        </Col>
+      </Row>
+      <Row>
+        <Col>
+          <Nav setPage={setPage} pages={pages} />
+        </Col>
+      </Row>
+      <Row>
+        <Col>
+          <Main page={page} />
+        </Col>
+      </Row>
+      <Row>
+        <Col>
+          <Footer />
+        </Col>
+      </Row>
+    </Container>
   )
 }
 
