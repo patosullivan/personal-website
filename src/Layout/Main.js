@@ -1,4 +1,4 @@
-import Home from "./Content/Home"
+import Home from "../Content/Home"
 import PropTypes from "prop-types"
 import React from "react"
 import { Card, CardBody, CardHeader, CardTitle } from "reactstrap"

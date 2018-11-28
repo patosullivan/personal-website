@@ -1,7 +1,7 @@
-import Banner from "./Banner"
-import Footer from "./Footer"
-import Main from "./Main"
-import Nav from "./Nav"
+import Banner from "./Layout/Banner"
+import Footer from "./Layout/Footer"
+import Main from "./Layout/Main"
+import Nav from "./Layout/Nav"
 import React, { useState } from "react"
 import { Col, Container, Row } from "reactstrap"
 
