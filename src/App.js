@@ -19,7 +19,7 @@ const App = () => {
       </Row>
       <Row>
         <Col>
-          <Nav setPage={setPage} pages={pages} />
+          <Nav setPage={setPage} pages={pages} page={page} />
         </Col>
       </Row>
       <Row>

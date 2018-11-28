@@ -6,7 +6,11 @@ const Nav = props => (
   <RSNav pills>
     {props.pages.map((page, index) => (
       <NavItem key={index}>
-        <NavLink href="#" onClick={() => props.setPage(page)}>
+        <NavLink
+          href="#"
+          onClick={() => props.setPage(page)}
+          active={page == props.page ? true : false}
+        >
           {page}
         </NavLink>
       </NavItem>
@@ -15,6 +19,7 @@ const Nav = props => (
 )
 
 Nav.propTypes = {
+  page: PropTypes.string,
   pages: PropTypes.array,
   setPage: PropTypes.func
 }
