@@ -1,5 +1,5 @@
 import React from "react"
 
-const Footer = () => <React.Fragment>Footer</React.Fragment>
+const Footer = () => <footer>Footer stuff</footer>
 
 export default Footer
