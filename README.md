@@ -2,7 +2,7 @@
 
 See it live at [patrick.osullivan.io](http://patrick.osullivan.io).
 
-## Built Using:
+## Built Using
 
 ### Modern Javascript
 
