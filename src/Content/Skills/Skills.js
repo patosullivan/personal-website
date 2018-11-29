@@ -11,6 +11,14 @@ const Skills = () => {
     {
       skill: "JavaScript",
       text: "ES6+. Modern, efficient. JAMstack preferred."
+    },
+    {
+      skill: "TypeScript",
+      text: "Safe, robust, clean, and self-documenting."
+    },
+    {
+      skill: "Node",
+      text: "Fast JS backends/APIs with Express.js"
     }
   ]
 
