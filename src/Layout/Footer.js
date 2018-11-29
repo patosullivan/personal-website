@@ -1,3 +1,5 @@
+import { faGithub } from "@fortawesome/free-brands-svg-icons"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import React from "react"
 
 const year = new Date().getFullYear()
@@ -10,7 +12,8 @@ const Footer = () => (
         className="text-muted"
         href="https://github.com/patosullivan/personal-website"
       >
-        Check out the repo for this web app on GitHub
+        Check out the repo for this web app on{" "}
+        <FontAwesomeIcon icon={faGithub} />
       </a>
       .
     </small>
