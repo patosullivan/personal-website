@@ -3,8 +3,8 @@ import { Jumbotron } from "reactstrap"
 
 const Banner = () => (
   <Jumbotron className="mb-2">
-    <h1 className="display-3">{"Patrick O'Sullivan"}</h1>
-    <p className="lead">Front-End Developer.</p>
+    <h1 className="display-4 text-monospace">{"Patrick O'Sullivan"}</h1>
+    <p className="lead text-monospace">Front-End Developer.</p>
     <hr />
     <p>Specializing in Javascript (ES6+), React, Node, and Typescript.</p>
   </Jumbotron>
