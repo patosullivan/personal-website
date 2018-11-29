@@ -6,11 +6,11 @@ See it live at [patrick.osullivan.io](http://patrick.osullivan.io).
 
 ### Modern Javascript
 
-ES6+ syntax and patterns, via Babel and Webpack
+ES6+ syntax and patterns, via Babel and Webpack.
 
 ### React
 
-16+ React, including Hooks.
+16+ React, including Hooks. Every component is a SFC.
 
 ### Bootstrap
 
