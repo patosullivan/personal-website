@@ -5,8 +5,8 @@ module.exports = {
   context: __dirname,
   plugins: [
     new CopyWebpackPlugin([
-      { from: "./index.html", to: "./index.html" },
-      { from: "./foggyMountains.jpg", to: "foggyMountains.jpg" }
+      { from: "./public/index.html", to: "index.html" },
+      { from: "./public/foggyMountains.jpg", to: "foggyMountains.jpg" }
     ])
   ],
   module: {
