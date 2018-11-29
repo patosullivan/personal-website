@@ -6,10 +6,7 @@ const Banner = () => (
     <h1 className="display-3">{"Patrick O'Sullivan"}</h1>
     <p className="lead">Front-End Developer.</p>
     <hr />
-    <p>
-      Developer specializing in frontend development using Javascript (ES6+),
-      React, and Typescript.
-    </p>
+    <p>Specializing in Javascript (ES6+), React, and Typescript.</p>
   </Jumbotron>
 )
 
