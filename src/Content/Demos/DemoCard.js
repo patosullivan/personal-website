@@ -3,12 +3,21 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import PropTypes from "prop-types"
 import React from "react"
-import { Card, CardBody, CardFooter, CardText, CardTitle } from "reactstrap"
+import {
+  Card,
+  CardBody,
+  CardFooter,
+  CardHeader,
+  CardText,
+  CardTitle
+} from "reactstrap"
 
 const DemoCard = props => (
   <Card>
-    <CardBody>
+    <CardHeader>
       <CardTitle>{props.title}</CardTitle>
+    </CardHeader>
+    <CardBody>
       <CardText>{props.text}</CardText>
     </CardBody>
     <CardFooter>
