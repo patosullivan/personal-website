@@ -14,7 +14,7 @@ ES6+ syntax and patterns, via Babel and Webpack.
 
 ### Bootstrap
 
-Bootstrap v4.1
+Bootstrap v4.1, with custom sass variables.
 
 ### Netlify
 
