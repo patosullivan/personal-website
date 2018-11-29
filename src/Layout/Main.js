@@ -2,6 +2,7 @@ import Home from "../Content/Home"
 import PropTypes from "prop-types"
 import React from "react"
 import { Card, CardBody, CardHeader, CardTitle } from "reactstrap"
+import Contact from "../Content/Contact"
 
 const Main = props => {
   let pageContent = "Home"
@@ -9,7 +10,9 @@ const Main = props => {
     case "Home":
       pageContent = <Home />
       break
-
+    case "Contact":
+      pageContent = <Contact />
+      break
     default:
       pageContent = <Home />
       break
