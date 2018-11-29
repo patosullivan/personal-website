@@ -3,6 +3,7 @@ import PropTypes from "prop-types"
 import React from "react"
 import { Card, CardBody } from "reactstrap"
 import Contact from "../Content/Contact"
+import Skills from "../Content/Skills/Skills"
 
 const Main = props => {
   let pageContent = "About"
@@ -12,6 +13,9 @@ const Main = props => {
       break
     case "Contact":
       pageContent = <Contact />
+      break
+    case "Skills":
+      pageContent = <Skills />
       break
     default:
       pageContent = <About />
