@@ -8,7 +8,7 @@ import { Col, Container, Row } from "reactstrap"
 const App = () => {
   let [page, setPage] = useState("About")
 
-  const pages = ["About", "Skills", "Contact"]
+  const pages = ["About", "Skills", "Demos", "Contact"]
 
   return (
     <Container>
