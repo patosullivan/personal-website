@@ -20,9 +20,6 @@ const Main = props => {
   return (
     <main className="py-2">
       <Card>
-        <CardHeader>
-          <CardTitle>{props.page}</CardTitle>
-        </CardHeader>
         <CardBody>{pageContent}</CardBody>
       </Card>
     </main>
