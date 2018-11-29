@@ -1,5 +1,21 @@
 # My personal website
 
-This is the repo for my personal website, written in modern JS with react, deployed using netlify.
+See it live at [patrick.osullivan.io](http://patrick.osullivan.io).
 
-Live at [patrick.osullivan.io](http://patrick.osullivan.io).
+## Built Using:
+
+### Modern Javascript
+
+ES6+ syntax and patterns, via Babel and Webpack
+
+### React
+
+16+ React, including Hooks.
+
+### Bootstrap
+
+Bootstrap v4.1
+
+### Netlify
+
+A continuous deployment process via Netlify.
