@@ -14,7 +14,7 @@ const Contact = () => (
       </ListGroupItem>
       <ListGroupItem>
         <a href="https://github.com/patosullivan">
-          <FontAwesomeIcon icon={faGithub} /> Github
+          <FontAwesomeIcon icon={faGithub} /> GitHub
         </a>
       </ListGroupItem>
       <ListGroupItem>
