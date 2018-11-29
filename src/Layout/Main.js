@@ -1,7 +1,7 @@
 import About from "../Content/About"
 import PropTypes from "prop-types"
 import React from "react"
-import { Card, CardBody, CardHeader, CardTitle } from "reactstrap"
+import { Card, CardBody } from "reactstrap"
 import Contact from "../Content/Contact"
 
 const Main = props => {
