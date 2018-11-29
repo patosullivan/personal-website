@@ -1,20 +1,20 @@
-import Home from "../Content/Home"
+import About from "../Content/About"
 import PropTypes from "prop-types"
 import React from "react"
 import { Card, CardBody, CardHeader, CardTitle } from "reactstrap"
 import Contact from "../Content/Contact"
 
 const Main = props => {
-  let pageContent = "Home"
+  let pageContent = "About"
   switch (props.page) {
-    case "Home":
-      pageContent = <Home />
+    case "About":
+      pageContent = <About />
       break
     case "Contact":
       pageContent = <Contact />
       break
     default:
-      pageContent = <Home />
+      pageContent = <About />
       break
   }
   return (
