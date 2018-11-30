@@ -4,7 +4,7 @@ import { Col, Row } from "reactstrap"
 
 const About = () => (
   <React.Fragment>
-    <Row>
+    <Row className="py-0">
       <Col>
         <img src={family} className="w-100 border rounded float-left" />
       </Col>

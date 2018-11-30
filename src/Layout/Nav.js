@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import React from "react"
 
 const Nav = props => (
-  <RSNav pills fill className="border rounded">
+  <RSNav pills fill className="border rounded py-0">
     {props.pages.map((page, index) => (
       <NavItem key={index}>
         <NavLink
