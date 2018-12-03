@@ -2,8 +2,8 @@ import Banner from "./Layout/Banner"
 import Footer from "./Layout/Footer"
 import Main from "./Layout/Main"
 import Nav from "./Layout/Nav"
-import React, { useState } from "react"
-import { Col, Container, Row } from "reactstrap"
+import React, {useState} from "react"
+import {Col, Container, Row} from "reactstrap"
 
 const App = () => {
   let [page, setPage] = useState("About")
