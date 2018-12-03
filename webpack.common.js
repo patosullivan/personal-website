@@ -1,12 +1,21 @@
 const path = require("path")
 const CopyWebpackPlugin = require("copy-webpack-plugin")
 const ImageminPlugin = require("imagemin-webpack-plugin").default
+const imageminMozjpeg = require("imagemin-mozjpeg")
 
 module.exports = {
   context: __dirname,
   plugins: [
     new CopyWebpackPlugin([{ from: "./public/", to: "./" }]),
-    new ImageminPlugin({test: /\.(jpe?g|png|gif|svg)$/i})	
+    new ImageminPlugin({
+      test: /\.(jpe?g|png|gif|svg)$/i,
+      plugins: [
+        imageminMozjpeg({
+          quality: 80,
+          progessive: true
+        })
+      ]
+    })
   ],
   module: {
     rules: [
