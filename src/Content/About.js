@@ -1,6 +1,6 @@
 import family from "./family.jpg"
 import React from "react"
-import { Col, Row } from "reactstrap"
+import {Col, Row} from "reactstrap"
 
 const About = () => (
   <Row className="py-0">
@@ -10,18 +10,21 @@ const About = () => (
     <Col sm>
       <br />
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pretium
-        efficitur rutrum. Pellentesque augue neque, posuere sit amet elementum
-        tempor, vestibulum ac tortor. Aliquam nec nisl in odio sagittis lacinia.
-        Vivamus turpis mauris, consequat a orci quis, efficitur bibendum orci.
-        Cras non posuere mauris. Donec vel congue turpis.
+        Patrick is a front end developer specializing in Javascript, React, and
+        Node.
       </p>
       <p>
-        Suspendisse a sapien lectus. Aenean nec nunc elit. Integer hendrerit
-        tempus tempor. Nam luctus purus libero, eu pretium orci mollis in.
-        Nullam ultricies volutpat pharetra. Cras tincidunt ex vel erat commodo
-        feugiat. Fusce sagittis tincidunt urna, ut ornare purus gravida eget.
-        Integer tempor nisi vel lacus aliquam placerat.
+        Although he formally studied economics, Patrick has always been
+        passionate about tinkering on his computer. He combines his analytical
+        university training with cutting-edge tooling to provide clients with
+        the products they need in the most cost-effective and elegant way.
+        {" Patrick's"} portfolio demonstrates his ability to build modern
+        Javascript web apps—but {"he's"} always learning more.
+      </p>
+      <p>
+        In his spare time, Patrick enjoys reading about finance, fitness,
+        history, and computing—when {"he's "} not chasing around his infant
+        daughter, that is.
       </p>
     </Col>
   </Row>
