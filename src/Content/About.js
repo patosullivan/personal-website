@@ -5,7 +5,7 @@ import {Col, Row} from "reactstrap"
 const About = () => (
   <Row className="py-0">
     <Col>
-      <img src={family} className="w-100 border rounded float-left" />
+      <img src={family} className="w-100 rounded float-left" />
     </Col>
     <Col sm>
       <br />
@@ -14,10 +14,10 @@ const About = () => (
         Node.
       </p>
       <p>
-        Although he formally studied economics, Patrick has always been
-        passionate about tinkering on his computer. He combines his analytical
-        university training with cutting-edge tooling to provide clients with
-        the products they need in the most cost-effective and elegant way.
+        Although he formally studied economics, Patrick has always loved
+        tinkering on his computer. He combines his analytical university
+        training with cutting-edge tooling to provide clients with the products
+        they need in the most cost-effective and elegant way.
         {" Patrick's"} portfolio demonstrates his ability to build modern
         Javascript web apps—but {"he's"} always learning more.
       </p>
