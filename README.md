@@ -10,7 +10,7 @@ ES6+ syntax and patterns, via Babel and Webpack.
 
 ### React
 
-React v16+, including Hooks. Every component is a SFC.
+React v16+, including Hooks (useState in particular). Because of Hooks, it uses no class components.
 
 ### Bootstrap
 
