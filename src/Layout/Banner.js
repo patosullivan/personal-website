@@ -10,7 +10,7 @@ const jumboStyle = {
 }
 
 const Banner = () => (
-  <Jumbotron className="my-2 text-center" style={jumboStyle}>
+  <Jumbotron className="my-2 text-center" css={jumboStyle}>
     <h1 className="display-4 text-monospace">{"Patrick O'Sullivan"}</h1>
     <p className="lead text-monospace">Husband, Father, Front-End Developer.</p>
     <hr />
