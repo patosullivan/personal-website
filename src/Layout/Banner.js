@@ -12,7 +12,7 @@ const jumboStyle = css`
 `
 
 const nameStyle = css`
-  @media (device-width: 320px), (device-width: 375px) {
+  @media (max-width: 375px) {
     font-size: 2.5rem;
     font-weight: 300;
     line-height: 1.2;

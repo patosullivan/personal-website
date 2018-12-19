@@ -5,7 +5,7 @@ import { NavLink as RRNavLink } from "react-router-dom"
 import { css } from "@emotion/core"
 
 const navLinkStyle = css`
-  @media (device-width: 320px), (device-width: 375px) {
+  @media (max-width: 375px) {
     padding: 0.5rem 0.5rem;
   }
 `
