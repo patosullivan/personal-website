@@ -5,7 +5,9 @@ const jumboStyle = {
   backgroundImage: "url(./foggyMountains.jpg)",
   backgroundPosition: "center",
   backgroundRepeat: "no-repeat",
-  backgroundSize: "cover"
+  backgroundSize: "cover",
+  padding: "1rem 1rem",
+  marginBottom: "0rem"
 }
 
 const Banner = () => (
