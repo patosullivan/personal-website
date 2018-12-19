@@ -8,9 +8,9 @@ import { Switch, Route } from "react-router-dom"
 
 const Main = () => {
   return (
-    <main className="py-2">
+    <main className="py-1">
       <Card>
-        <CardBody>
+        <CardBody className="p-2 mx-3">
           <Switch>
             <Route exact path="/" component={About} />
             <Route path="/contact" component={Contact} />
