@@ -9,6 +9,13 @@ import {
   CardTitle,
   CardImg
 } from "reactstrap"
+import { css } from "@emotion/core"
+
+const aboutCardStyle = css`
+  @media (max-width: 375px) {
+    padding: 1rem;
+  }
+`
 
 const About = () => (
   <Row className="py-0">
@@ -20,7 +27,7 @@ const About = () => (
         <CardHeader className="py-2">
           <CardTitle className="text-center mb-0">About Patrick</CardTitle>
         </CardHeader>
-        <CardBody>
+        <CardBody css={aboutCardStyle}>
           <br />
           <p>
             Patrick is a front end developer specializing in Javascript, React,
