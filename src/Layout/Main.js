@@ -1,41 +1,26 @@
 import About from "../Content/About"
-import PropTypes from "prop-types"
 import React from "react"
 import { Card, CardBody } from "reactstrap"
 import Contact from "../Content/Contact"
 import Skills from "../Content/Skills/Skills"
 import Demos from "../Content/Demos/Demos"
+import { Switch, Route } from "react-router-dom"
 
-const Main = props => {
-  let pageContent = "About"
-  switch (props.page) {
-    case "About":
-      pageContent = <About />
-      break
-    case "Contact":
-      pageContent = <Contact />
-      break
-    case "Skills":
-      pageContent = <Skills />
-      break
-    case "Demos":
-      pageContent = <Demos />
-      break
-    default:
-      pageContent = <About />
-      break
-  }
+const Main = () => {
   return (
     <main className="py-2">
       <Card>
-        <CardBody>{pageContent}</CardBody>
+        <CardBody>
+          <Switch>
+            <Route exact path="/" component={About} />
+            <Route path="/contact" component={Contact} />
+            <Route path="/skills" component={Skills} />
+            <Route path="/demos" component={Demos} />
+          </Switch>
+        </CardBody>
       </Card>
     </main>
   )
-}
-
-Main.propTypes = {
-  page: PropTypes.string
 }
 
 export default Main
