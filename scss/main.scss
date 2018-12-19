@@ -1,3 +1,15 @@
 @import "custom";
-@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import "../node_modules/bootstrap/scss/_functions.scss";
+@import "../node_modules/bootstrap/scss/_variables.scss";
+@import "../node_modules/bootstrap/scss/mixins";
+@import "../node_modules/bootstrap/scss/utilities";
+@import "../node_modules/bootstrap/scss/_reboot.scss";
+@import "../node_modules/bootstrap/scss/_type.scss";
+@import "../node_modules/bootstrap/scss/_list-group.scss";
+@import "../node_modules/bootstrap/scss/_buttons.scss";
+@import "../node_modules/bootstrap/scss/_jumbotron.scss";
+@import "../node_modules/bootstrap/scss/_nav.scss";
+@import "../node_modules/bootstrap/scss/_navbar.scss";
+@import "../node_modules/bootstrap/scss/_grid.scss";
+@import "../node_modules/bootstrap/scss/_card.scss";
 @import url("https://fonts.googleapis.com/css?family=IBM+Plex+Mono|Nanum+Gothic");
