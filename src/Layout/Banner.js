@@ -3,7 +3,6 @@ import { Jumbotron } from "reactstrap"
 
 const jumboStyle = {
   backgroundImage: "url(./foggyMountains.jpg)",
-  backgroundAttachment: "fixed",
   backgroundPosition: "center",
   backgroundRepeat: "no-repeat",
   backgroundSize: "cover"
