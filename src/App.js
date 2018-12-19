@@ -2,13 +2,11 @@ import Banner from "./Layout/Banner"
 import Footer from "./Layout/Footer"
 import Main from "./Layout/Main"
 import Nav from "./Layout/Nav"
-import React, { useState } from "react"
+import React from "react"
 import { Col, Container, Row } from "reactstrap"
 import { BrowserRouter } from "react-router-dom"
 
 const App = () => {
-  let [page, setPage] = useState("About")
-
   const pages = ["About", "Skills", "Demos", "Contact"]
 
   return (
@@ -21,12 +19,12 @@ const App = () => {
         </Row>
         <Row>
           <Col>
-            <Nav setPage={setPage} pages={pages} page={page} />
+            <Nav pages={pages} />
           </Col>
         </Row>
         <Row>
           <Col>
-            <Main page={page} />
+            <Main />
           </Col>
         </Row>
         <Row>

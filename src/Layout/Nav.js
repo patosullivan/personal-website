@@ -10,7 +10,6 @@ const Nav = props => (
         <NavLink
           exact
           to={page == "About" ? "/" : `/${page}`}
-          onClick={() => props.setPage(page)}
           activeClassName="active"
           tag={RRNavLink}
         >
@@ -22,8 +21,7 @@ const Nav = props => (
 )
 
 Nav.propTypes = {
-  pages: PropTypes.array,
-  setPage: PropTypes.func
+  pages: PropTypes.array
 }
 
 export default Nav
