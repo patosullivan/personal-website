@@ -1,4 +1,2 @@
 /*
-  Link: </style.css>; rel=preload; as=style
-  Link: </main.js>; rel=preload; as=script
-  Link: </image.jpg>; rel=preload; as=image
+  Link: </index.bundle.js>; rel=preload; as=script
