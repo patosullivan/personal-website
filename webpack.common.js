@@ -68,6 +68,11 @@ module.exports = {
         }
       },
       {
+        test: /\.(woff2?|ttf|otf|eot|svg)$/,
+        exclude: /node_modules/,
+        loader: "file-loader"
+      },
+      {
         test: /\.(png|jpg|gif)$/,
         use: {
           loader: "responsive-loader",
