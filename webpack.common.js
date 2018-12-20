@@ -5,10 +5,19 @@ const imageminMozjpeg = require("imagemin-mozjpeg")
 const ManifestPlugin = require("webpack-manifest-plugin")
 const SWPrecacheWebpackPlugin = require("sw-precache-webpack-plugin")
 
+const PUBLIC_PATH = "https://patrick.osullivan.io/"
+
 module.exports = {
   context: __dirname,
   plugins: [
-    new SWPrecacheWebpackPlugin(),
+    new SWPrecacheWebpackPlugin({
+      cacheId: "patrick",
+      dontCacheBustUrlsMatching: /\.\w{8}\./,
+      filename: "service-worker.js",
+      minify: true,
+      navigateFallback: PUBLIC_PATH + "index.html",
+      staticFileGlobsIgnorePatterns: [/\_redirects/, /asset-manifest\.json$/]
+    }),
     new ManifestPlugin({ fileName: "asset-manifest.json" }),
     new CopyWebpackPlugin([{ from: "./public/", to: "./" }]),
     new ImageminPlugin({
@@ -69,6 +78,7 @@ module.exports = {
   entry: "./index.js",
   output: {
     path: path.resolve(__dirname, "dist"),
-    filename: "index.bundle.js"
+    filename: "index.bundle.js",
+    publicPath: PUBLIC_PATH
   }
 }
