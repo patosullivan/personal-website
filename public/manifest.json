@@ -1,0 +1,8 @@
+{
+  "short_name": "Patrick",
+  "name": "Patrick O'Sullivan",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "theme_color": "#007fae",
+  "background_color": "#007fae"
+}

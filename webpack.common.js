@@ -2,10 +2,14 @@ const path = require("path")
 const CopyWebpackPlugin = require("copy-webpack-plugin")
 const ImageminPlugin = require("imagemin-webpack-plugin").default
 const imageminMozjpeg = require("imagemin-mozjpeg")
+const ManifestPlugin = require("webpack-manifest-plugin")
+const SWPrecacheWebpackPlugin = require("sw-precache-webpack-plugin")
 
 module.exports = {
   context: __dirname,
   plugins: [
+    new SWPrecacheWebpackPlugin(),
+    new ManifestPlugin({ fileName: "asset-manifest.json" }),
     new CopyWebpackPlugin([{ from: "./public/", to: "./" }]),
     new ImageminPlugin({
       test: /\.(jpe?g|png|gif|svg)$/i,

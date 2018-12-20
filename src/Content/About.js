@@ -21,7 +21,11 @@ const About = () => (
   <Row className="py-0">
     <CardDeck>
       <Card>
-        <CardImg width="50%" src={family} />
+        <CardImg
+          width="50%"
+          src={family}
+          alt="Me and my family at Muir Woods"
+        />
       </Card>
       <Card>
         <CardHeader className="py-2">
