@@ -14,7 +14,11 @@ module.exports = {
       filename: "service-worker.js",
       minify: true,
       navigateFallback: "./index.html",
-      staticFileGlobsIgnorePatterns: [/_redirects/, /asset-manifest\.json$/]
+      staticFileGlobsIgnorePatterns: [
+        /_redirects/,
+        /_headers/,
+        /asset-manifest\.json$/
+      ]
     }),
     new ManifestPlugin({ fileName: "asset-manifest.json" }),
     new CopyWebpackPlugin([{ from: "./public/", to: "./" }]),
