@@ -1,4 +1,4 @@
-import family from "./family.jpg"
+import family from "./family.jpg?placeholder=true"
 import React from "react"
 import {
   CardDeck,
@@ -23,7 +23,8 @@ const About = () => (
       <Card>
         <CardImg
           width="50%"
-          src={family}
+          src={family.src}
+          srcSet={family.srcSet}
           alt="Me and my family at Muir Woods"
         />
       </Card>

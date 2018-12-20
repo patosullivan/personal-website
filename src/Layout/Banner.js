@@ -1,14 +1,21 @@
 import React from "react"
 import { Jumbotron } from "reactstrap"
 import { css } from "@emotion/core"
+import foggyMountains from "./foggyMountains.jpg"
 
 const jumboStyle = css`
-  background-image: url(./foggyMountains.jpg);
+  background-image: url("./imgs/foggyMountains-1140.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   padding: 1rem 1rem;
-  marginbottom: 0rem;
+  margin-bottom: 0rem;
+  @media (max-width: 375px) {
+    background-image: url("./imgs/foggyMountains-345.jpg");
+  }
+  @media (max-width: 425px) {
+    background-image: url("./imgs/foggyMountains-395.jpg");
+  }
 `
 
 const nameStyle = css`

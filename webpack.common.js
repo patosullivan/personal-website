@@ -5,8 +5,6 @@ const imageminMozjpeg = require("imagemin-mozjpeg")
 const ManifestPlugin = require("webpack-manifest-plugin")
 const SWPrecacheWebpackPlugin = require("sw-precache-webpack-plugin")
 
-const PUBLIC_PATH = "https://patrick.osullivan.io/"
-
 module.exports = {
   context: __dirname,
   plugins: [
@@ -15,7 +13,7 @@ module.exports = {
       dontCacheBustUrlsMatching: /\.\w{8}\./,
       filename: "service-worker.js",
       minify: true,
-      navigateFallback: PUBLIC_PATH + "index.html",
+      navigateFallback: "./index.html",
       staticFileGlobsIgnorePatterns: [/_redirects/, /asset-manifest\.json$/]
     }),
     new ManifestPlugin({ fileName: "asset-manifest.json" }),
@@ -24,7 +22,7 @@ module.exports = {
       test: /\.(jpe?g|png|gif|svg)$/i,
       plugins: [
         imageminMozjpeg({
-          quality: 25,
+          quality: 85,
           progessive: true
         })
       ]
@@ -66,19 +64,22 @@ module.exports = {
         }
       },
       {
-        test: /\.(png|svg|jpg|gif)$/,
-        use: [
-          {
-            loader: "file-loader"
+        test: /\.(png|jpg|gif)$/,
+        use: {
+          loader: "responsive-loader",
+          options: {
+            sizes: [268, 290, 323, 345, 373, 395, 528, 1140],
+            placeholder: true,
+            placeholderSize: 50,
+            name: "imgs/[name]-[width].[ext]"
           }
-        ]
+        }
       }
     ]
   },
   entry: "./index.js",
   output: {
     path: path.resolve(__dirname, "dist"),
-    filename: "index.bundle.js",
-    publicPath: PUBLIC_PATH
+    filename: "index.bundle.js"
   }
 }
