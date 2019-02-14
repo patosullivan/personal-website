@@ -47,10 +47,12 @@ const Banner = () => (
       {"Patrick O'Sullivan"}
     </h1>
     <p css={summaryStyle} className="lead text-monospace">
-      Husband, Father, Front-End Developer.
+      Husband, Father, Developer.
     </p>
     <hr />
-    <p css={secondarySummaryStyle}>JavaScript (ES6+), React, and Node.</p>
+    <p css={secondarySummaryStyle}>
+      JavaScript (ES6+), TypeScript, React, and Node.
+    </p>
   </Jumbotron>
 )
 

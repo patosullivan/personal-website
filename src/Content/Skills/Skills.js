@@ -1,7 +1,12 @@
 import React from "react"
 import SkillCard from "./SkillCard"
 import { CardGroup } from "reactstrap"
-import { faNode, faJsSquare, faReact } from "@fortawesome/free-brands-svg-icons"
+import {
+  faNode,
+  faJsSquare,
+  faReact,
+  faMicrosoft
+} from "@fortawesome/free-brands-svg-icons"
 
 const Skills = () => {
   const skillArray = [
@@ -14,6 +19,11 @@ const Skills = () => {
       skill: "JavaScript",
       text: "ES6+. Modern, efficient. JAMstack preferred.",
       icon: faJsSquare
+    },
+    {
+      skill: "TypeScript",
+      text: "Safer, easier to maintian web applications.",
+      icon: faMicrosoft
     },
     {
       skill: "Node",

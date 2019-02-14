@@ -35,8 +35,8 @@ const About = () => (
         <CardBody css={aboutCardStyle}>
           <br />
           <p>
-            Patrick is a front end developer specializing in Javascript, React,
-            and Node.
+            Patrick is a web developer specializing in JavaScript, Typescript,
+            React, and Node.
           </p>
           <p>
             Although he formally studied economics, Patrick has always loved
