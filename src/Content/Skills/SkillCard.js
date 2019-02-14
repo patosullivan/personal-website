@@ -6,10 +6,12 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 const SkillCard = props => (
   <Card>
     <CardHeader>
-      <FontAwesomeIcon icon={props.icon} size="lg" />
+      <CardTitle>
+        <FontAwesomeIcon icon={props.icon} size="lg" />
+        &nbsp; {props.title}
+      </CardTitle>
     </CardHeader>
     <CardBody>
-      <CardTitle>{props.title}</CardTitle>
       <CardText>{props.text}</CardText>
     </CardBody>
   </Card>
