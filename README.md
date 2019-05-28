@@ -10,7 +10,7 @@ ES6+ syntax and patterns, via Babel and Webpack.
 
 ### React
 
-React v16+, every component is an SFC. 
+React v16+, every component is a functional component. 
 
 ### Bootstrap
 
