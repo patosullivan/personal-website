@@ -12,7 +12,7 @@ const footerTextStyle = css`
 `
 
 const Footer = () => (
-  <footer className="bg-light border w-100 mx-0 px-2 py-0 mt-2 rounded">
+  <footer className="bg-light border w-100 mx-0 px-2 py-0 mt-2">
     <small css={footerTextStyle} className="text-muted">
       &copy; {year} |{" "}
       <a
