@@ -19,7 +19,7 @@ const Footer = () => (
         className="text-muted"
         href="https://github.com/patosullivan/personal-website"
       >
-        Check out the repo for this web app on{" "}
+        Look at the repo for this site on{" "}
         <FontAwesomeIcon icon={faGithub} />
       </a>
       .
