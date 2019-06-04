@@ -11,7 +11,7 @@ const navLinkStyle = css`
 `
 
 const Nav = props => (
-  <RSNav pills fill className="border rounded py-0">
+  <RSNav pills fill className="border py-0">
     {props.pages.map((page, index) => (
       <NavItem key={index}>
         <NavLink
