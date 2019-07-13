@@ -7,7 +7,7 @@ import { Col, Container, Row } from "reactstrap"
 import { BrowserRouter } from "react-router-dom"
 
 const App = () => {
-  const pages = ["About", "Skills", "Demos", "Contact"]
+  const pages = ["About", "Skills",/*"Demos",*/ "Contact"]
 
   return (
     <BrowserRouter>
