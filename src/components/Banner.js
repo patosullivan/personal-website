@@ -1,6 +1,7 @@
 import React from "react"
 import { Jumbotron } from "reactstrap"
 import { css } from "@emotion/core"
+import foggyMountains from "./foggyMountains.jpg"
 
 const jumboStyle = css`
   background-image: url("./imgs/foggyMountains-1140.jpg");
