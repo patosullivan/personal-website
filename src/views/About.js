@@ -49,7 +49,7 @@ const About = () => (
           </p>
           <p>
             In his spare time, Patrick enjoys reading about finance, fitness,
-            history, and computing—when {"he's "} not chasing around his infant
+            history, and computing—when {"he's "} not chasing around his son and
             daughter, that is.
           </p>
         </CardBody>
