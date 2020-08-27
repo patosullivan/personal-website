@@ -1,4 +1,4 @@
-import family from "./family.jpg?placeholder=true"
+import family from "./family.jpg"
 import React from "react"
 import {
   CardDeck,
@@ -7,7 +7,6 @@ import {
   CardBody,
   CardHeader,
   CardTitle,
-  CardImg
 } from "reactstrap"
 import { css } from "@emotion/core"
 
@@ -21,12 +20,14 @@ const About = () => (
   <Row className="py-0">
     <CardDeck>
       <Card>
-        <CardImg
-          width="50%"
-          src={family.src}
-          srcSet={family.srcSet}
-          alt="Me and my family at Muir Woods"
-        />
+        <picture className="card-img">
+          <source srcSet="./imgs/family-268.jpg" media="(max-width: 308px)" />
+          <source srcSet="./imgs/family-323.jpg" media="(max-width: 360px)" />
+          <source srcSet="./imgs/family-345.jpg" media="(max-width: 375px)" />
+          <source srcSet="./imgs/family-395.jpg" media="(max-width: 425px)" />
+          <source srcSet="./imgs/family-528.jpg" media="(max-width: 768px)" />
+          <img src="./imgs/family-1140.jpg" width="100%" />
+        </picture>
       </Card>
       <Card>
         <CardHeader className="py-2">
@@ -48,7 +49,7 @@ const About = () => (
           </p>
           <p>
             In his spare time, Patrick enjoys reading about finance, fitness,
-            history, and computing—when {"he's "} not chasing around his infant
+            history, and computing—when {"he's "} not chasing around his son and
             daughter, that is.
           </p>
         </CardBody>

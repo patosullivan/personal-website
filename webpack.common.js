@@ -17,8 +17,8 @@ module.exports = {
       staticFileGlobsIgnorePatterns: [
         /_redirects/,
         /_headers/,
-        /asset-manifest\.json$/
-      ]
+        /asset-manifest\.json$/,
+      ],
     }),
     new ManifestPlugin({ fileName: "asset-manifest.json" }),
     new CopyWebpackPlugin([{ from: "./public/", to: "./" }]),
@@ -26,11 +26,11 @@ module.exports = {
       test: /\.(jpe?g|png|gif|svg)$/i,
       plugins: [
         imageminMozjpeg({
-          quality: 85,
-          progessive: true
-        })
-      ]
-    })
+          quality: 70,
+          progessive: true,
+        }),
+      ],
+    }),
   ],
   module: {
     rules: [
@@ -38,39 +38,39 @@ module.exports = {
         test: /\.(scss)$/,
         use: [
           {
-            loader: "style-loader"
+            loader: "style-loader",
           },
           {
-            loader: "css-loader"
+            loader: "css-loader",
           },
           {
             loader: "postcss-loader",
             options: {
-              plugins: function() {
+              plugins: function () {
                 return [require("precss"), require("autoprefixer")]
-              }
-            }
+              },
+            },
           },
           {
-            loader: "sass-loader"
-          }
-        ]
+            loader: "sass-loader",
+          },
+        ],
       },
       {
         test: /\.css$/,
-        use: ["style-loader", "css-loader"]
+        use: ["style-loader", "css-loader"],
       },
       {
         test: /\.js$/,
         exclude: /(node_modules|bower_components)/,
         use: {
-          loader: "babel-loader"
-        }
+          loader: "babel-loader",
+        },
       },
       {
         test: /\.(woff2?|ttf|otf|eot|svg)$/,
         exclude: /node_modules/,
-        loader: "file-loader"
+        loader: "file-loader",
       },
       {
         test: /\.(png|jpg|gif)$/,
@@ -80,15 +80,15 @@ module.exports = {
             sizes: [268, 290, 323, 345, 373, 395, 528, 1140],
             placeholder: true,
             placeholderSize: 50,
-            name: "imgs/[name]-[width].[ext]"
-          }
-        }
-      }
-    ]
+            name: "imgs/[name]-[width].[ext]",
+          },
+        },
+      },
+    ],
   },
   entry: "./index.js",
   output: {
     path: path.resolve(__dirname, "dist"),
-    filename: "index.bundle.js"
-  }
+    filename: "index.bundle.js",
+  },
 }
