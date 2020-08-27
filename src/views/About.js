@@ -26,7 +26,11 @@ const About = () => (
           <source srcSet="./imgs/family-345.jpg" media="(max-width: 375px)" />
           <source srcSet="./imgs/family-395.jpg" media="(max-width: 425px)" />
           <source srcSet="./imgs/family-528.jpg" media="(max-width: 768px)" />
-          <img src="./imgs/family-1140.jpg" width="100%" />
+          <img
+            src="./imgs/family-1140.jpg"
+            width="100%"
+            alt="My family at Muir Woods"
+          />
         </picture>
       </Card>
       <Card>
