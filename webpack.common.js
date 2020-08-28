@@ -21,7 +21,7 @@ module.exports = {
       ],
     }),
     new ManifestPlugin({ fileName: "asset-manifest.json" }),
-    new CopyWebpackPlugin([{ from: "./public/", to: "./" }]),
+    new CopyWebpackPlugin({ patterns: [{ from: "./public/", to: "./" }] }),
     new ImageminPlugin({
       test: /\.(jpe?g|png|gif|svg)$/i,
       plugins: [
