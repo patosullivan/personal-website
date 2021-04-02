@@ -10,9 +10,9 @@ const navLinkStyle = css`
   }
 `
 
-const Nav = props => (
+const Nav = ({ pages }) => (
   <RSNav pills fill className="border py-0">
-    {props.pages.map((page, index) => (
+    {pages.map((page, index) => (
       <NavItem key={index}>
         <NavLink
           css={navLinkStyle}
@@ -25,11 +25,16 @@ const Nav = props => (
         </NavLink>
       </NavItem>
     ))}
+    <NavItem>
+      <NavLink href="https://www.notion.so/Patrick-O-Sullivan-Resume-4904a0d812fa4353984d1faea64fd546">
+        My Resume
+      </NavLink>
+    </NavItem>
   </RSNav>
 )
 
 Nav.propTypes = {
-  pages: PropTypes.array
+  pages: PropTypes.array,
 }
 
 export default Nav
