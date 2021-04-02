@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/patricko
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://patrick.osullivan.io
+  * I am patricko (https://keybase.io/patricko) on keybase.
+  * I have a public key ASDaWmC_IVfo9W3vCWjvuyGPFbgio9krxgi4g2YZAi_UIAo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01014fb3f2547e8242962d579219d2b4b557d25e215f13eaa17f59a8e4dc9777c5fb0a",
+      "host": "keybase.io",
+      "kid": "0120da5a60bf2157e8f56def0968efbb218f15b822a3d92bc608b8836619022fd4200a",
+      "uid": "ce8a7e142942b55b9005e41cde2e7f00",
+      "username": "patricko"
+    },
+    "merkle_root": {
+      "ctime": 1617375860,
+      "hash": "dc6021a3a58545b56d782eddaae4a4f32a59132351e1ae21fc3fde640f42972e0c1d29d120f20166bc63fd205b63ab0f6ca8495c0580f4406e3cf9c6f7d1ee9d",
+      "hash_meta": "3f20e3be28ef18200b8ed95bb697339241168d2172e3444437243dfa6e95cdb2",
+      "seqno": 19531969
+    },
+    "service": {
+      "entropy": "dFURP/tjVaH1c0grEtW/nqfm",
+      "hostname": "patrick.osullivan.io",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "5.6.2"
+  },
+  "ctime": 1617375881,
+  "expire_in": 504576000,
+  "prev": "f2c12062a27feeea7d1ba315b751ff4e9ef3a5de7bf21c5e671d30ba3f0bad23",
+  "seqno": 32,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEg2lpgvyFX6PVt7wlo77shjxW4IqPZK8YIuINmGQIv1CAKp3BheWxvYWTESpcCIMQg8sEgYqJ/7up9G6MVt1H/Tp7zpd578hxeZx0wuj8LrSPEIP4ty/XVBWOU0zVCe24iZy2bmFlPp2XSi2rqMAXhG8+/AgHCo3NpZ8RA9KbCNhBxP4vDGZuWA/q4w2CWX0XLe5Bb/hPR0ianWxatiA/uUv9Cb8xrwVvmpTMKyVrDoevIUoOplVSh9sOfDKhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIFCf1v6JMCjsrgGsge/S+RGUJ++u2vXj0nJ6/BPs27Aqo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/patricko
+
+==================================================================
