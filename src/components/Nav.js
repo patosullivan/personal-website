@@ -26,7 +26,7 @@ const Nav = ({ pages }) => (
       </NavItem>
     ))}
     <NavItem>
-      <NavLink href="https://www.notion.so/Patrick-O-Sullivan-Resume-4904a0d812fa4353984d1faea64fd546">
+      <NavLink href="https://osullivanio.notion.site/osullivanio/Patrick-O-Sullivan-Resume-4904a0d812fa4353984d1faea64fd546">
         My Resume
       </NavLink>
     </NavItem>
