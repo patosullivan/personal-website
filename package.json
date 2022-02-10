@@ -27,7 +27,7 @@
     "imagemin-mozjpeg": "^8.0.0",
     "imagemin-webpack-plugin": "^2.3.0",
     "jimp": "^0.16.1",
-    "node-sass": "^4.10.0",
+    "node-sass": "^7.0.0",
     "postcss-loader": "^3.0.0",
     "precss": "^4.0.0",
     "prop-types": "^15.6.2",
