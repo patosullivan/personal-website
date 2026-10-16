@@ -1,0 +1,15 @@
+Patrick Text is a subset of Source Serif 4 Variable Roman, by Adobe and its contributors.
+
+The primary family and PostScript names were previously changed to comply with the upstream reserved font name. Glyph designs are unchanged. This revision further subsets the existing Patrick Text font to Basic Latin (U+0020–U+007E) plus characters appearing in the HTML text: é (U+00E9) and ’ (U+2019). Glyphs needed by fontTools’ standard retained OpenType shaping features are also retained. Unused optional features such as small capitals and stylistic numeral alternates were removed; default shaping and kerning remain. Future copy edits that introduce other characters require updating the subset.
+
+The weight axis remains variable over 400–600, and the optical-size axis remains variable over its full 8–60 range. All existing name records, including copyright, license, attribution, and reserved-name notices, are preserved byte-for-byte. The original OFL.txt is unchanged.
+
+The inline favicon uses the same font’s P glyph outline, sampled at weight 600 and optical size 32. It does not load an additional font or image file.
+
+Upstream source:
+https://raw.githubusercontent.com/adobe-fonts/source-serif/release/WOFF2/VAR/SourceSerif4Variable-Roman.ttf.woff2
+
+Upstream license:
+https://github.com/adobe-fonts/source-serif/blob/release/LICENSE.md
+
+Copyright and SIL Open Font License 1.1 are retained in OFL.txt and the font metadata.
