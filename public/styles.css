@@ -1,0 +1,84 @@
+@font-face {
+  font-family: "Patrick Text";
+  src: url("fonts/patrick-text-variable-latin.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400 600;
+  font-display: swap;
+}
+
+:root {
+  color-scheme: light dark;
+  --background: #ffffff;
+  --text: #30322f;
+  --heading: #252825;
+  --link: #315f45;
+  --underline: #668574;
+}
+
+* { box-sizing: border-box; }
+
+html {
+  background: var(--background);
+  color: var(--text);
+  font-family: "Patrick Text", Georgia, serif;
+  font-size: 18px;
+  font-weight: 400;
+  font-optical-sizing: auto;
+  font-synthesis: none;
+  line-height: 1.55;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+body { margin: 0; }
+
+main {
+  width: calc(100% - 48px);
+  max-width: 660px;
+  margin: 72px auto 64px;
+}
+
+.name {
+  margin: 0 0 29px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+h1 {
+  margin: 0 0 48px;
+  color: var(--heading);
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: -0.25px;
+}
+
+p { margin: 0 0 18px; }
+.bio p:last-child { margin-bottom: 0; }
+.nowrap { white-space: nowrap; }
+.contact { margin: 48px 0 0; }
+
+a {
+  color: var(--link);
+  text-decoration-line: underline;
+  text-decoration-color: var(--underline);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+a:hover { text-decoration-thickness: 2px; }
+a:focus-visible { outline: 2px solid currentColor; outline-offset: 4px; }
+
+@media (max-width: 600px) {
+  main { margin-top: 40px; margin-bottom: 48px; }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #1d1c1a;
+    --text: #e9e5dc;
+    --heading: #f1eee7;
+    --link: #a8cbaa;
+    --underline: #7d9d80;
+  }
+}
